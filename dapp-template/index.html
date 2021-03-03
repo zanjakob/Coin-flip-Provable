@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>COIN FLIP</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+    <br>
+    <h1>Žanys Coin Flip</h1>
+    <br>
+    <h2>BET ETH AND FLIP THE COIN!</h2>
+    <br>
+    <h3>If you win you dubble your ETH! If you lose, you get NOTHING!</h3>
+    </div>
+    <div>
+      <input type="text" id="fundETH_input" placeholder="Input ETH to fund contract" >
+      <button type="button" id="fundETH_button" class="btn btn-primary">Fund contract</button>
+      <br>
+      <br>
+        <h4>Awailable ETH to win in the contract: <span id="balance_output"></span></h4>
+        <button type="button" id="bet_1ETH_button" class="btn btn-primary">BET 1 ETH</button>
+        <button type="button" id="bet_2ETH_button" class="btn btn-primary">BET 2 ETH</button>
+        <button type="button" id="bet_3ETH_button" class="btn btn-primary">BET 3 ETH</button>
+        <span id="betETH_output"></span>
+        <br>
+        <br>
+
+        <button type="button" id="bet_HEADS_button" class="btn btn-primary">HEADS</button>
+        <button type="button" id="bet_TAILS_button" class="btn btn-primary">TAILS</button>
+        <span id="headsTails_output"></span>
+        <br>
+        <br>
+        <button type="button" id="Flip_coin_button" class="btn btn-primary">FLIP COIN</button>
+        <button type="button" id="update_button_provable" class="btn btn-primary">update PROVABLE</button>
+        <button type="button" id="callback_button" class="btn btn-primary">callback button</button>
+
+
+        <h5 style="color:red;"><span id="winMessage_output"></span></h5>
+        <div>
+        <h4><span id="win_output"></span></h4>
+        <br>
+        <h3>You won <span id="winnings_output"></span> ETH</h3></span>
+        <br>
+        <br>
+        <button type="button" id="withdraw_button" class="btn btn-primary">withdraw ETH</button>
+        <br>
+        <br>
+        <button type="button" id="callback_button_getLatestNumber" class="btn btn-primary">GET LATEST NUMBER</button>
+        <span id="getLatestNumber_output"></span>
+      </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
